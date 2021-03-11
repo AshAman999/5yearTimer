@@ -56,12 +56,12 @@ $(window).load(function(){
 
 
 $('#countdown').countdown({
-	date: "Sep 2 2026",
+	date: "Mar 11 2026",
 	render: function(data) {
 	  var el = $(this.el);
 	  el.empty()
-	    //.append("<div>" + this.leadingZeros(data.years, 4) + "<span>years</span></div>")
-	    .append("<div>" + this.leadingZeros(data.days, 2) + " <span>days</span></div>")
+	    .append("<div>" + this.leadingZeros(data.years, 2) + "<span>years</span></div>")
+	    .append("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div>")
 	    .append("<div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div>")
 	    .append("<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>")
 	    .append("<div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
